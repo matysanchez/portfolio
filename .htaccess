@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+Options -Indexes
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^resume$					bin/resume.pdf [L]
+RewriteRule ^([a-z0-9-]+)$				index.php?cat=$1 [L]

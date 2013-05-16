@@ -1,0 +1,150 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
+h1, h2, h3, h4, h5{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+body{
+	background:#f1f1f1;
+	color: #222222;
+	margin:0;
+	padding:0;
+	font-family: 'Noto Sans', sans-serif;
+	font-size:18px;
+}
+p{
+	line-height:24px;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+a{
+	color:#3498db;
+	text-decoration: none;
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+}
+a:hover{
+	color:#3498db;
+	text-decoration: underline;
+}
+header{
+	background:white;
+	height:23px;
+	padding:30px 0;
+	position:fixed;
+	width:100%;
+	z-index:1;
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+}
+header.trans{
+	padding:18px 0;
+}
+header a{
+	color:#3498db;
+	text-transform: uppercase;
+	margin:0 20px;
+	padding-bottom:5px;
+	font-size:14px;
+}
+header a:hover{
+	border-bottom:2px solid #3498db;
+	text-decoration: none;
+}
+.cover{
+	background:url(../images/golden-gate.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:600px;
+	width:100%;
+	margin-bottom:25px;
+}
+.logo{
+	background-image:url(../images/logo.png);
+	background-repeat:no-repeat;
+	color:transparent;
+	width:200px;
+	height:23px;
+	display:block;
+	font-size:0;
+}
+.eleven{text-align: right;}
+.only-res{
+	display:none;
+	margin-bottom:20px;
+}
+.white_space{height:100px;}
+.bigportfolio img{margin-bottom:20px;}
+.smallportfolio img{margin-bottom:20px; text-align:center !important;}
+footer{
+	background:#3498db;
+	color:#fff;
+	padding:20px 0;
+	width:100%;
+	margin-top:25px;
+}
+footer a{color:#fff !important;}
+footer a:hover{text-decoration: none;}
+::-moz-selection {color:white; background:rgba(52, 152, 219, .5); text-shadow:0 1px 0 rgba(0,0,0,.5);}
+::selection {color:white; background:rgba(52, 152, 219, .5); text-shadow:0 1px 0 rgba(0,0,0,.5);}
+
+footer ::-moz-selection {color:white; background:rgba(241, 241, 241, .3); text-shadow:0 1px 0 rgba(0,0,0,.5);}
+footer ::selection {color:white; background:rgba(241, 241, 241, .3); text-shadow:0 1px 0 rgba(0,0,0,.5);}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px){
+	body{font-size:16px;}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	body{font-size:15px;}
+	.cover{height: 538px;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px){
+	body{font-size:14px;}
+	.logo{
+		margin:0 auto;
+	}
+	.only-res{display:block;}
+	.cover{display:none;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	.logo{
+		margin:0 auto;
+	}
+	.eleven{text-align:center;}
+	header a{margin:0 5px;}
+	header{position: static; height:38px;}
+	.only-res{display:block;}
+	.cover{display:none;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px){
+	.logo{
+		margin:0 auto;
+	}
+	.eleven{text-align:center;}
+	header a{margin:0 5px;}
+	header{position: static; height:38px;}
+	.only-res{display:block;}
+	.cover{display:none;}
+}
+
+@media \0screen {
+  img { 
+  	width: auto; /* for ie 8 */
+  }
+}

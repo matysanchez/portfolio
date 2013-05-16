@@ -13,5 +13,5 @@ Remember to config the URL in the file index.html.
  ```php
 <?php
 // Where the site is hosted?
-$url    = "http://localhost/skeleton/";
+$url    = "http://localhost/skeleton/"; 
  ```

@@ -3,7 +3,7 @@ Portfolio
 
 ![alt text](http://matysanchez.com/images/logo.png "matysanchez.com")
 
-This is my personal Portfolio. I use it on my website: `[matysanchez.com](http://matysanchez.com/)`_
+This is my personal Portfolio. I use it on my website: [matysanchez.com](http://matysanchez.com/)
 
 Of course you can use this code for your portfolio, o whatever you want.
 

@@ -17,7 +17,7 @@
 		</div>
 		<div class="five columns">
 			<h5>Cities where I've been</h5>
-			<a href="http://www.tripadvisor.com.ar/TravelMap?uid=6762B10F5DCF55C88A16E597385BF453" alt="TripAdvisor Map"><h3>49</h3></a>
+			<a href="http://www.tripadvisor.com.ar/TravelMap?uid=6762B10F5DCF55C88A16E597385BF453" alt="TripAdvisor Map"><h3>50</h3></a>
 		</div>
 	</div>
 </footer>

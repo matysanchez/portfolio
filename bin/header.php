@@ -21,12 +21,17 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="<?=$url?>images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="<?=$url?>images/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="<?=$url?>images/apple-touch-icon-144x144.png">
-	<script type="text/javascript">
-	var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-34011238-1']); _gaq.push(['_trackPageview']);
-	(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
-	</script>
+	<?php
+	if($analytics){
+		echo "	<script type=\"text/javascript\">\n";
+		echo "	var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-34011238-1']); _gaq.push(['_trackPageview']);\n";
+		echo "	(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n";
+		echo "	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n";
+		echo "	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();\n";
+		echo "	</script>\n";
+		echo "	}\n";
+	}
+	?>
 </head>
 <body>
 <header>
@@ -35,9 +40,11 @@
 			<h1><a href="<?=$url?>" class="logo" title="Matías Sanchez">Matías Sanchez</a></h1>
 		</div>
 		<div class="eleven columns">
-			<a href="<?=$url?>portfolio" title="Portfolio">Portfolio</a>
-			<a href="<?=$url?>resume" title="Resume">Resume</a>
-			<a href="<?=$url?>contact" title="Contact">Contact</a>
+			<?php
+			foreach ($navBar as $i => $row){
+				echo '			<a href="'.$url.$row[1].'" title="'.$row[0].'">'.$row[0]."</a>\n";
+			}
+			?>
 		</div>
 	</div>
 </header>

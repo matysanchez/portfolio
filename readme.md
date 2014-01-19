@@ -1,6 +1,4 @@
-Portfolio
-=====
-
+#Portfolio
 ![alt text](http://matysanchez.com/images/logo.png "matysanchez.com")
 
 This is my personal Portfolio. I use it on my website: [matysanchez.com](http://matysanchez.com/)
@@ -13,7 +11,7 @@ To add a new page, you have to crea a new one, and put it in ``bin/sections/`` f
 
 If you want to use analytics, please set ``$analytics`` to true, and then put your own Analytics code in the ``header.php`` file.
 
-Use ``<?=$url?>`` when you want to link anythin, like a image or any source. To use this feature, make sure that you have ``short_open_tag=On`` in your ``php.ini`` file, or try adding: ``ini_set( 'short_open_tag' , '1' );`` at the bottom of index.php.
+Use ``<?=$url?>`` when you want to link anything, like a image or any source. To use this feature, make sure that you have ``short_open_tag=On`` in your ``php.ini`` file, or try adding: ``ini_set( 'short_open_tag' , '1' );`` at the bottom of index.php.
 
 For the new page that are not base on ``home.html`` and do not have a cover or something special, use this code at the beginning of the file:
 ```
@@ -28,8 +26,7 @@ date_default_timezone_set('America/Buenos_Aires');
 $url        = "http://matysanchez.com/";
  ```
 
-TODO
-=====
+##TODO
 1. Get the number of Twitter followers with Javascript or PHP (the idea is not to use the Twitter API)
 2. Get the number of cities I've been without any API, just a crawl to TripAdvisor site. (We have to use a cache for this this)
 3. Add a word-rotator to the things that I love.

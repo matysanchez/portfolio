@@ -27,6 +27,6 @@ $url        = "http://matysanchez.com/";
  ```
 
 ##TODO
-1. Get the number of Twitter followers with Javascript or PHP (the idea is not to use the Twitter API)
-2. Get the number of cities I've been without any API, just a crawl to TripAdvisor site. (We have to use a cache for this this)
+~~1. Get the number of Twitter followers with Javascript or PHP (the idea is not to use the Twitter API)~~
+~~2. Get the number of cities I've been without any API, just a crawl to TripAdvisor site. (We have to use a cache for this this)~~
 3. Add a word-rotator to the things that I love.

@@ -33,6 +33,9 @@
 	}
 	?>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write("<script type='text/javascript' src='javascripts/jquery.min.js'><\/script>");</script>
+	<script src="<?=$url?>javascripts/jquery.cookies.min.js"></script>
+	<script src="<?=$url?>javascripts/portfolio.js"></script>
 </head>
 <body>
 <header>

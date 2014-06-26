@@ -9,6 +9,7 @@
 	<meta name="description" content="Matías Sanchez is a frontend web developer from Argentina, who loves javascript such as traveling.">
 	<meta name="author" content="Matías Sanchez">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="google-site-verification" content="QwZdAZh27c0eh-4xVSafQ8nFmM0NhUk2MXhOa1ssY38" />
 	<link rel="stylesheet" href="<?=$url?>stylesheets/base.css">
 	<link rel="stylesheet" href="<?=$url?>stylesheets/skeleton.css">
 	<link rel="stylesheet" href="<?=$url?>stylesheets/layout.css">

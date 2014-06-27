@@ -29,6 +29,9 @@ switch ($category):
         $where = "contact";
         $title = "Contact - ";
         break;
+    case "resume":
+        $where = "resume";
+        break;
     default;
         $where = "home";
         $title = null;
@@ -38,7 +41,12 @@ endswitch;
 include( "bin/header.php" );
 
 // Also we have the file name, so we can load the section
-include( "bin/sections/$where.html" );
+if ($where == "resume") {
+    header('Location: https://github.com/matysanchez/portfolio/blob/master/bin/resume.pdf?raw=true');
+    die();
+} else {
+    include( "bin/sections/$where.html" );
+}
 
 // And.. the end...
 include( "bin/footer.php" );

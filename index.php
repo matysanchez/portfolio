@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('America/Buenos_Aires');
 // Where the site is hosted?
-$url		= "http://matysanchez.com/";
+$url		= "http://www.matysanchez.com/";
 
 // Where the visitor is?
 $category	= (isset($_GET["cat"]) ? $_GET["cat"] : null);
